@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Portfolio</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #e0f7fa; /* Light cyan background */
+            color: #444;
+        }
+
+        header {
+            background: #00695c; /* Teal */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffeb3b; /* Yellow */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffca28; /* Amber */
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: white; /* Change title color to white */
+        }
+
+        h2, h3 {
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            color: #00796b; /* Dark teal */
+        }
+
+        .project {
+            background: #4db6ac; /* Light teal */
+            color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #004d40; /* Darker teal */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .star-rating {
+            direction: rtl;
+            display: inline-block;
+            font-size: 20px;
+            color: #ffeb3b; /* Yellow */
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            cursor: pointer;
+        }
+
+        .star-rating label:before {
+            content: '★';
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Creative Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Jebin Abraham Samuel Raj, and I am currently studying in the Artificial Intelligence and Machine Learning department at Karunya University. I am eager to apply my skills in data analysis and problem-solving to innovative projects in the tech industry. Known for my ability to learn quickly and adapt to new challenges, I am passionate about gaining hands-on experience and growing professionally. With a positive attitude and a strong work ethic, I am ready to contribute to a dynamic team and help drive success.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Weather App</h3>
+            <p>A simple web application that allows users to check the current weather conditions of any city. It fetches data from a weather API and displays the temperature, humidity, and weather description in a user-friendly interface. This project helped me learn about API integration and basic JavaScript.</p>
+        </div>
+        <div class="project">
+            <h3>To-Do List</h3>
+            <p>This project involves creating a to-do list application that enables users to add, delete, and mark tasks as complete. It uses HTML, CSS, and JavaScript to manage tasks, providing a hands-on experience with DOM manipulation and local storage for saving tasks.</p>
+        </div>
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive portfolio website that showcases my skills, projects, and contact information. It includes sections for about me, projects, and a contact form. This project enhanced my understanding of web design principles and HTML/CSS layout techniques.</p>
+        </div>
+        <div class="project">
+            <h3>Basic Calculator</h3>
+            <p>A simple calculator application that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. Built using HTML, CSS, and JavaScript, this project introduced me to event handling and basic logic implementation in JavaScript.</p>
+        </div>
+    </section>
+    
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>
+                Data Analysis
+                <div class="star-rating">
+                    <input type="radio" id="data-analysis-1" name="data-analysis" value="1">
+                    <input type="radio" id="data-analysis-2" name="data-analysis" value="2">
+                    <input type="radio" id="data-analysis-3" name="data-analysis" value="3" checked>
+                    <label for="data-analysis-1"></label>
+                    <label for="data-analysis-2"></label>
+                    <label for="data-analysis-3"></label>
+                </div>
+            </li>
+            <li>
+                Machine Learning
+                <div class="star-rating">
+                    <input type="radio" id="ml-1" name="machine-learning" value="1">
+                    <input type="radio" id="ml-2" name="machine-learning" value="2">
+                    <input type="radio" id="ml-3" name="machine-learning" value="3" checked>
+                    <label for="ml-1"></label>
+                    <label for="ml-2"></label>
+                    <label for="ml-3"></label>
+                </div>
+            </li>
+            <li>
+                Python Programming
+                <div class="star-rating">
+                    <input type="radio" id="python-1" name="python" value="1">
+                    <input type="radio" id="python-2" name="python" value="2">
+                    <input type="radio" id="python-3" name="python" value="3">
+                    <input type="radio" id="python-4" name="python" value="4" checked>
+                    <input type="radio" id="python-5" name="python" value="5">
+                    <label for="python-1"></label>
+                    <label for="python-2"></label>
+                    <label for="python-3"></label>
+                    <label for="python-4"></label>
+                    <label for="python-5"></label>
+                </div>
+            </li>
+            <li>
+                Statistical Analysis
+                <div class="star-rating">
+                    <input type="radio" id="stats-1" name="statistical-analysis" value="1">
+                    <input type="radio" id="stats-2" name="statistical-analysis" value="2">
+                    <input type="radio" id="stats-3" name="statistical-analysis" value="3">
+                    <input type="radio" id="stats-4" name="statistical-analysis" value="4" checked>
+                    <label for="stats-1"></label>
+                    <label for="stats-2"></label>
+                    <label for="stats-3"></label>
+                    <label for="stats-4"></label>
+                </div>
+            </li>
+            <li>
+                Problem Solving
+                <div class="star-rating">
+                    <input type="radio" id="problem-solving-1" name="problem-solving" value="1">
+                    <input type="radio" id="problem-solving-2" name="problem-solving" value="2">
+                    <input type="radio" id="problem-solving-3" name="problem-solving" value="3" checked>
+                    <input type="radio" id="problem-solving-4" name="problem-solving" value="4">
+                    <label for="problem-solving-1"></label>
+                    <label for="problem-solving-2"></label>
+                    <label for="problem-solving-3"></label>
+                    <label for="problem-solving-4"></label>
+                </div>
+            </li>
+            <li>
+                Team Collaboration
+                <div class="star-rating">
+                    <input type="radio" id="team-collab-1" name="team-collaboration" value="1">
+                    <input type="radio" id="team-collab-2" name="team-collaboration" value="2">
+                    <input type="radio" id="team-collab-3" name="team-collaboration" value="3">
+                    <input type="radio" id="team-collab-4" name="team-collaboration" value="4" checked>
+                    <input type="radio" id="team-collab-5" name="team-collaboration" value="5">
+                    <label for="team-collab-1"></label>
+                    <label for="team-collab-2"></label>
+                    <label for="team-collab-3"></label>
+                    <label for="team-collab-4"></label>
+                    <label for="team-collab-5"></label>
+                </div>
+            </li>
+            <li>
+                Communication Skills
+                <div class="star-rating">
+                    <input type="radio" id="comms-1" name="communication" value="1">
+                    <input type="radio" id="comms-2" name="communication" value="2">
+                    <input type="radio" id="comms-3" name="communication" value="3">
+                    <input type="radio" id="comms-4" name="communication" value="4" checked>
+                    <input type="radio" id="comms-5" name="communication" value="5">
+                    <label for="comms-1"></label>
+                    <label for="comms-2"></label>
+                    <label for="comms-3"></label>
+                    <label for="comms-4"></label>
+                    <label for="comms-5"></label>
+                </div>
+            </li>
+            <li>
+                Technical Aptitude
+                <div class="star-rating">
+                    <input type="radio" id="tech-1" name="technical" value="1">
+                    <input type="radio" id="tech-2" name="technical" value="2">
+                    <input type="radio" id="tech-3" name="technical" value="3" checked>
+                    <input type="radio" id="tech-4" name="technical" value="4">
+                    <label for="tech-1"></label>
+                    <label for="tech-2"></label>
+                    <label for="tech-3"></label>
+                    <label for="tech-4"></label>
+                </div>
+            </li>
+            <li>
+                Web Development
+                <div class="star-rating">
+                    <input type="radio" id="web-dev-1" name="web-development" value="1">
+                    <input type="radio" id="web-dev-2" name="web-development" value="2">
+                    <input type="radio" id="web-dev-3" name="web-development" value="3">
+                    <input type="radio" id="web-dev-4" name="web-development" value="4" checked>
+                    <label for="web-dev-1"></label>
+                    <label for="web-dev-2"></label>
+                    <label for="web-dev-3"></label>
+                    <label for="web-dev-4"></label>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>As a student, I am gaining valuable experience through academic projects and coursework that are foundational for my career in technology. I have been involved in various group projects that emphasize collaboration and communication, allowing me to apply my knowledge in data analysis and machine learning. I am eager to build on this experience and develop my skills further in real-world settings.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, feel free to reach out via email at <a href="mailto:jebinabraham@karunya.edu.in">jebinabraham@karunya.edu.in</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jebin Abraham Samuel Raj. All rights reserved.</p>
+    </footer>
+</body>
+</html>
